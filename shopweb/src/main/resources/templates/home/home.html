@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link rel='stylesheet'
+	href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
+<script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
+<script>
+	new WOW().init();
+</script>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<body>
+<head>
+<body>
+	<div id="header" class="container-fuild">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light navbar">
+			<a class="navbar-brand" href="#"><img
+				th:src="@{img/iconnguoinhen.jpg}" height="50px" width="50px"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon" style="background-color: white;"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link active" href="#">Home <span
+						class="sr-only">(current)</span></a> <a class="nav-item nav-link"
+						href="#">Dich Vu</a> <a class="nav-item nav-link" href="#">Lien
+						he</a> <a class="nav-item nav-link disabled" href="#">Disabled</a>
+				</div>
+				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="#">dang nhap</a> <a
+						class="nav-item nav-link" href="#">dang ky</a>
+
+				</div>
+
+			</div>
+		</nav>
+		<div class="envent_header container wow bounceIn"
+			data-wow-iteration="15">
+			<span>Ngay k mai</span><br /> <span style="font-size: 50px">mua
+				1 tang 1</span><br />
+			<button>Xem ngay</button>
+
+		</div>
+	</div>
+	<div id="info" class="container-fluid">
+		<div class="row">
+			<div class="col-12 col-sm-4 col-lg-4 wow bounceIn"
+				data-wow-duration="3s">
+				<img class="info" th:src="@{img/a.jpg}"><br /> <span
+					style="font-size: 50px; font-weight: 500;">Chất lượng</span><br>
+				<span>cam kết chất lượng tốt nhất</span>
+			</div>
+			<div class="col-12 col-sm-4 col-lg-4 wow tada" data-wow-duration="3s"
+				data-wow-delay="1s">
+				<img class=" info" th:src="@{img/b.png}"> <br /> <span
+					style="font-size: 50px; font-weight: 500;">Chi Phí</span><br>
+				<span>cam kết chất lượng tốt nhất Giá rẻ nhất</span>
+			</div>
+			<div class="col-12 col-sm-4 col-lg-4 wow tada" data-wow-duration="3s"
+				data-wow-delay="2s">
+				<img class="info" th:src="@{img/c.jpg}"> <br /> <span
+					style="font-size: 50px; font-weight: 500;">Giao Hàng</span><br>
+				<span>cam kết giao hàng trong 24h</span>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="item_spham" class="container-fluid" data-wow-duration="10s">
+		<div class="wow tada">
+			<span style="font-size: 100px; font-family: cursive;">SẢN PHẨM
+				HOT</span>
+		</div>
+		<div id="san_pham" class="row">
+			<div class="col-md-3 col-sm-6">
+				<div class="card" style="width: 18rem;">
+					<img class="card-img-top" th:src="@{img/iconngnhen2.jpg}"
+						alt="Card image cap">
+					<div class="card-body">
+						<span style="font-size: 25px; color: red;">Giá:300.00</span><span
+							class="card-title">Người Nhện</span> <a href="#"
+							class="btn btn-primary">Chi Tiết</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="card" style="width: 18rem;">
+					<img class="card-img-top" th:src="@{img/iconngnhen2.jpg}"
+						alt="Card image cap">
+					<div class="card-body">
+						<span style="font-size: 25px; color: red;">Giá:300.00</span><span
+							class="card-title">Người Nhện</span> <a href="#"
+							class="btn btn-primary">Chi Tiết</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="card" style="width: 18rem;">
+					<img class="card-img-top" th:src="@{img/iconngnhen2.jpg}"
+						alt="Card image cap">
+					<div class="card-body">
+						<span style="font-size: 25px; color: red;">Giá:300.00</span><span
+							class="card-title">Người Nhện</span> <a href="#"
+							class="btn btn-primary">Chi Tiết</a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-3 col-sm-6">
+				<div class="card" style="width: 18rem;">
+					<img class="card-img-top" th:src="@{img/iconngnhen2.jpg}"
+						alt="Card image cap">
+					<div class="card-body">
+						<span class="card-title">Người Nhện</span> <span
+							style="font-size: 25px; color: red;">Giá:300.00</span> <a
+							href="#" class="btn btn-primary">Chi Tiết</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="card" style="width: 18rem;">
+					<img class="card-img-top" th:src="@{img/iconngnhen2.jpg}"
+						alt="Card image cap">
+					<div class="card-body">
+						<span style="font-size: 25px; color: red;">Giá:300.00</span><span
+							class="card-title">Người Nhện</span> <a href="#"
+							class="btn btn-primary">Chi Tiết</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="card" style="width: 18rem;">
+					<img class="card-img-top" th:src="@{img/iconngnhen2.jpg}"
+						alt="Card image cap">
+					<div class="card-body">
+						<span style="font-size: 25px; color: red;">Giá:300.00</span><span
+							class="card-title">Người Nhện</span> <a href="#"
+							class="btn btn-primary">Chi Tiết</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="card" style="width: 18rem;">
+					<img class="card-img-top" th:src="@{img/iconngnhen2.jpg}"
+						alt="Card image cap">
+					<div class="card-body">
+						<span class="card-title">Người Nhện</span> <span
+							style="font-size: 25px; color: red;">Giá:300.00</span> <a
+							href="#" class="btn btn-primary">Chi Tiết</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="card" style="width: 18rem;">
+					<img class="card-img-top" th:src="@{img/iconngnhen2.jpg}"
+						alt="Card image cap">
+					<div class="card-body">
+						<span class="card-title">Người Nhện</span> <span
+							style="font-size: 25px; color: red;">Giá:300.00</span> <a
+							href="#" class="btn btn-primary">Chi Tiết</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- end sp -->
+	<div id="footer" class="container-fuild">
+		<div class="row">
+			<div class="col-md-4 col-sm-4">
+				<p>
+					<span class="footer_style">THÔNG TIN SHOP</span>
+				</p>
+				<span>Shop Hùng chuyên bán đồ chơi siêu nhân</span>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<p>
+					<span class="footer_style">LIÊN HỆ</span>
+				</p>
+				<span> liên hệ mr.hung</span> <span>số điện thoại:99999</span> <span>HÀ
+					Nội</span>
+			</div>
+
+			<div class="col-md-4 col-sm-4">
+				<p>
+					<span class="footer_style">Góp Ý</span>
+				</p>
+				<input class="input_footer" type="text" placeholder="Email">
+				<textarea class="input_footer" rows="4" cols="50"
+					placeholder="nội dung"></textarea>
+				<button class="input_footer" style="background-color: blue;">Gửi
+					Nội Dung</button>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>

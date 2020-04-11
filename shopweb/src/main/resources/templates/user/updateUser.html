@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<meta charset="UTF-8" />
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<body>
+	<div th:replace="comom/header::header"></div>
+	<h1>Thêm người dùng</h1>
+	<form th:action="@{/user/update}" th:object="${user}" method="post">
+		<div>
+			<label>Name</label> <input name="name" type="text" placeholder="Name"
+				required="required" />
+		</div>
+		<div>
+			<label>AGE</label> <input name="age" type="text" placeholder="AGE"
+				required="required" />
+		</div>
+		<div>
+			<label>EMAIL</label><input name="email" type="text"
+				placeholder="enail" required="required">
+		</div>
+		<div>
+			<label>USERNAME</label><input name="username" type="text"
+				placeholder="username" required="required">
+		</div>
+		<div>
+			<label>USERNAME</label><input name="password" type="text"
+				placeholder="password" required="required">
+		</div>
+		<div>
+			<label>ROLE</label><select name="role">
+				<option value="ADMIN">ADMIN</option>
+				<option value="MEMBER">MEMBER</option>
+
+			</select>
+		</div>
+		<div>
+			<label>GENDER</label><select name="gender">
+				<option value="name">Nam</option>
+				<option value="name">Nữ</option>
+			</select>
+		</div>
+		<div>
+			<button type="submit">update</button>
+		</div>
+		<div th:replace="comom/footer::footer"></div>
+	</form>
+</body>
+</html>

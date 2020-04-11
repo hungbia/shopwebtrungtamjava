@@ -1,0 +1,119 @@
+html, body {
+	font-family: autu !important;
+}
+/*css trang chủ*/
+#header1 {
+	background-image: url("../img/1.jpg");
+	height: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#header {
+	height: 400px;
+	width:100%;
+	background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)),
+		url("../img/1.jpg") no-repeat center center fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* ghi đề thuộc tính dã có !important*/
+.navbar {
+	background: none !important;
+	border: none;
+}
+
+.active a {
+	color: blue!impotant;
+}
+
+.envent_header {
+	margin-top: 200px;
+	text-align: center;
+}
+
+.envent_header>span {
+	color: white;
+}
+
+.envent_header>button {
+	color: red;
+	background-color: blue;
+}
+
+#info {
+	font-style: inherit;
+	text-align: center;
+	margin-top: 48px;
+}
+
+.info {
+	width: 48px;
+	height: 48px;
+}
+/*the span dau tien trong class info can top 16px*/
+.info>span {
+	margin-top: 16px;
+}
+
+#item_spham {
+	margin-top: 100px;
+	text-align: center;
+	font-size: 32px;
+	font-weight: 500;
+}
+
+/*.sanpham {
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: 46px;
+	background-color: red;
+	border: 1px 1px solid #ccc;
+	border-radius: 5px;
+}
+*/
+#san_pham {
+	margin-top: 100px;
+}
+
+#footer {
+	margin-top: 80px; background : linear-gradient( rgba( 255, 0, 0, 0.45),
+	rgba( 255, 0, 0, 0.45)), url("../img/2.jpg") no-repeat center center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: black;
+	padding: 30px;
+	color: white;
+	background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)),
+		url("../img/2.jpg") no-repeat center center;
+}
+
+.footer_style {
+	font-size: 40px;
+}
+
+.input_footer {
+	background-color: #d8d8d8;
+	height: 40px;
+	width: 503px;
+	margin: 8px;
+	width: 100%;
+}
+
+#footer p {
+	text-align: center;
+	margin-top: 10px;
+}
+
+@media ( max-width :575px) {
+}
+
+@media ( min-width :576px) and (max-width:767px) {
+}
+
+@media ( max-width :991px) {
+}

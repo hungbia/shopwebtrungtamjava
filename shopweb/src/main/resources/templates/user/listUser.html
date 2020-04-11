@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<meta charset="UTF-8" />
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<body>
+	<div th:replace="comom/header::header"></div>
+	<div class="container-fluid">
+		<div class="row">
+			<div>
+				<form th:action="@{/user/list}" method="post">
+					<input class="form-control" type="text" name="name"
+						th:value="${keyword}" placeholder="nhap người dùng cần tìm">
+					<a th:href="@{'/user/search?keyword='+${keyword}}" type="submit">seaarch</a>
+					<h1>Danh Sách Người Dùng</h1>
+
+					<table class="table table-striped">
+						<tr>
+							<th scope="col">ID</th>
+							<th scope="col">Name</th>
+							<th>AGE</th>
+							<th>EMAIL</th>
+							<th>USERNAME</th>
+							<th>PASSWORD</th>
+							<th>ROLE</th>
+							<th>GENDER</th>
+							<th>SELECT</th>
+						</tr>
+						<tr th:each="user:${users}">
+							<td class="table-success" th:text="${user.id}"></td>
+							<td th:text="${user.name}"></td>
+							<td th:text="${user.age}"></td>
+							<td th:text="${user.email}"></td>
+							<td th:text="${user.username}"></td>
+							<td th:text="${user.password}"></td>
+							<td th:text="${user.role}"></td>
+							<td th:text="${user.gender}"></td>
+							<td><a class="btn btn-primary"
+								th:href="@{'/user/delete?id='+${user.id}}">delete</a> <a
+								class="btn btn-primary" th:href="@{/user/add}">add</a>
+						</tr>
+					</table>
+				</form>
+			</div>
+
+		</div>
+	</div>
+	<div th:replace="comom/footer::footer"></div>
+</body>
+</html>
